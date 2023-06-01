@@ -171,6 +171,9 @@
       enter number and format
       days, hours, minutes or seconds
     */
-    countDownClock(32066, 'minutes');
+    const noww = new Date()
+    const hol = new Date('2023-06-24 16:30:00')
+    const mins = Math.round((hol - noww) / 1000 / 60)
+    countDownClock(mins, 'minutes');
     </script>
 </html>
